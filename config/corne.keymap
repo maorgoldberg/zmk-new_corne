@@ -50,6 +50,15 @@
         tap-ms = <30>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        gaming {
+            bindings = <&tog 4>;
+            key-positions = <25 38>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -129,6 +138,18 @@
 
             label = "FN";
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        gaming {
+            bindings = <
+&kp ESC  &kp Q  &kp W   &kp E      &kp R      &kp T        &kp UP_ARROW    &trans  &trans  &trans  &trans  &trans  &trans
+&kp N1   &kp A  &kp S   &kp D      &kp F      &kp G        &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans
+&kp N2   &kp Z  &kp X   &kp C      &kp V      &kp M        &kp LEFT        &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &kp LCTRL  &kp RSHFT  &kp SPACE    &kp RIGHT       &tog 0  &trans  &trans
+                                                           &kp ENTER
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
     };
 };
