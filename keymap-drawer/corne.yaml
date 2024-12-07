@@ -242,7 +242,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-right-bold$$
   - {t: QWERTY, h: toggle}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: QWERTY, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
 combos:
